@@ -3,7 +3,18 @@
 Public Class Main
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ScanBtn.ImageScaling = ToolStripItemImageScaling.None
+        Dim currentWidth As Integer = Screen.PrimaryScreen.Bounds.Width
+        Dim currentHeight As Integer = Screen.PrimaryScreen.Bounds.Height
+        If currentWidth < 1280 Then
+            Me.Size = New System.Drawing.Size(currentWidth, currentHeight)
+        ElseIf currentWidth > 1280 Then
+            Me.Size = New System.Drawing.Size(1280, 800)
+            Me.WindowState = FormWindowState.Normal
+        ElseIf currentWidth = 1280 Then
+            Me.Size = New System.Drawing.Size(1280, 800)
+            Me.WindowState = FormWindowState.Maximized
+        End If
+
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
