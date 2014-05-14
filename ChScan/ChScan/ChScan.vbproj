@@ -76,6 +76,13 @@
     <Compile Include="AboutFrm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmScan.Designer.vb">
+      <DependentUpon>FrmScan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalFunctions.vb" />
     <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
@@ -101,6 +108,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AboutFrm.resx">
       <DependentUpon>AboutFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScan.resx">
+      <DependentUpon>FrmScan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.el-GR.resx">
       <DependentUpon>Main.vb</DependentUpon>
@@ -234,6 +244,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wallpaper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxDpocxLib">
+      <Guid>{89ED29D3-7FCD-11CE-9A39-0020AF7653A9}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DpocxLib">
+      <Guid>{89ED29D3-7FCD-11CE-9A39-0020AF7653A9}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfigurationFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
