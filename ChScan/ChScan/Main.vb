@@ -9,21 +9,22 @@ Public Class FrmMain
             foo = MsgBox("Application is already running", vbCritical)
             End
         End If
-        readerini = "C:\NDPWork\HSBC\SOURCE_NDP" + "\READER.INI"
-        endorseini = "C:\NDPWork\HSBC\SOURCE_NDP" + "\ENDORSE.INI"
-        carSetupini = "C:\NDPWork\HSBC\SOURCE_NDP" + "\IMAGE.INI"
+        readerini = "C:\Config" + "\READER.INI"
+        endorseini = "C:\Config" + "\ENDORSE.INI"
+        carSetupini = "C:\Config" + "\IMAGE.INI"
 
         Dim currentWidth As Integer = Screen.PrimaryScreen.Bounds.Width
         Dim currentHeight As Integer = Screen.PrimaryScreen.Bounds.Height
-        If currentWidth < 1280 Then
-            Me.Size = New System.Drawing.Size(currentWidth, currentHeight)
-        ElseIf currentWidth > 1280 Then
-            Me.Size = New System.Drawing.Size(1280, 800)
-            Me.WindowState = FormWindowState.Normal
-        ElseIf currentWidth = 1280 Then
-            Me.Size = New System.Drawing.Size(1280, 800)
-            Me.WindowState = FormWindowState.Maximized
-        End If
+        'If currentWidth < 1280 Then
+        '    Me.Size = New System.Drawing.Size(currentWidth, currentHeight)
+        'ElseIf currentWidth > 1280 Then
+        '    Me.Size = New System.Drawing.Size(1280, 800)
+        '    Me.WindowState = FormWindowState.Normal
+        'ElseIf currentWidth = 1280 Then
+        '    Me.Size = New System.Drawing.Size(1280, 800)
+        '    Me.WindowState = FormWindowState.Maximized
+        'End If
+        Me.StartPosition = FormStartPosition.CenterScreen
 
     End Sub
 
