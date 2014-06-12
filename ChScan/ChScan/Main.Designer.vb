@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Main
+Partial Class FrmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,7 +24,7 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.CheckScanningToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -67,15 +67,12 @@ Partial Class Main
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ButtonPnl = New System.Windows.Forms.Panel()
-        Me.helpBtn = New System.Windows.Forms.Button()
-        Me.searchBtn = New System.Windows.Forms.Button()
-        Me.endOfDayBtn = New System.Windows.Forms.Button()
-        Me.quitBtn = New System.Windows.Forms.Button()
-        Me.scanBtn = New System.Windows.Forms.Button()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.TSBtnScan = New System.Windows.Forms.ToolStripButton()
+        Me.TSBtnExit = New System.Windows.Forms.ToolStripButton()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
-        Me.ButtonPnl.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip
@@ -370,105 +367,58 @@ Partial Class Main
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(39, 17)
         Me.ToolStripStatusLabel.Text = "Status"
         '
-        'ButtonPnl
+        'ToolStrip1
         '
-        Me.ButtonPnl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonPnl.BackColor = System.Drawing.Color.White
-        Me.ButtonPnl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.ButtonPnl.Controls.Add(Me.helpBtn)
-        Me.ButtonPnl.Controls.Add(Me.searchBtn)
-        Me.ButtonPnl.Controls.Add(Me.endOfDayBtn)
-        Me.ButtonPnl.Controls.Add(Me.quitBtn)
-        Me.ButtonPnl.Controls.Add(Me.scanBtn)
-        Me.ButtonPnl.Location = New System.Drawing.Point(12, 35)
-        Me.ButtonPnl.Name = "ButtonPnl"
-        Me.ButtonPnl.Size = New System.Drawing.Size(861, 52)
-        Me.ButtonPnl.TabIndex = 9
+        Me.ToolStrip1.BackColor = System.Drawing.SystemColors.Control
+        Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSBtnScan, Me.TSBtnExit})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(885, 39)
+        Me.ToolStrip1.TabIndex = 11
+        Me.ToolStrip1.Text = "ToolStrip1"
         '
-        'helpBtn
+        'TSBtnScan
         '
-        Me.helpBtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.helpBtn.Image = Global.ChScan.My.Resources.Resources.manual
-        Me.helpBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.helpBtn.Location = New System.Drawing.Point(813, 3)
-        Me.helpBtn.Name = "helpBtn"
-        Me.helpBtn.Size = New System.Drawing.Size(41, 42)
-        Me.helpBtn.TabIndex = 4
-        Me.helpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.helpBtn.UseVisualStyleBackColor = True
+        Me.TSBtnScan.Image = Global.ChScan.My.Resources.Resources.scan
+        Me.TSBtnScan.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.TSBtnScan.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TSBtnScan.Name = "TSBtnScan"
+        Me.TSBtnScan.Size = New System.Drawing.Size(117, 36)
+        Me.TSBtnScan.Text = "Ordinary Scan"
         '
-        'searchBtn
+        'TSBtnExit
         '
-        Me.searchBtn.Image = Global.ChScan.My.Resources.Resources.search
-        Me.searchBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.searchBtn.Location = New System.Drawing.Point(85, 3)
-        Me.searchBtn.Name = "searchBtn"
-        Me.searchBtn.Size = New System.Drawing.Size(79, 42)
-        Me.searchBtn.TabIndex = 3
-        Me.searchBtn.Text = "Search"
-        Me.searchBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.searchBtn.UseVisualStyleBackColor = True
+        Me.TSBtnExit.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.TSBtnExit.Image = Global.ChScan.My.Resources.Resources.quit
+        Me.TSBtnExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.TSBtnExit.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.TSBtnExit.Name = "TSBtnExit"
+        Me.TSBtnExit.Size = New System.Drawing.Size(61, 36)
+        Me.TSBtnExit.Text = "Exit"
         '
-        'endOfDayBtn
-        '
-        Me.endOfDayBtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.endOfDayBtn.Image = Global.ChScan.My.Resources.Resources.calendar
-        Me.endOfDayBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.endOfDayBtn.Location = New System.Drawing.Point(637, 3)
-        Me.endOfDayBtn.Name = "endOfDayBtn"
-        Me.endOfDayBtn.Size = New System.Drawing.Size(101, 42)
-        Me.endOfDayBtn.TabIndex = 2
-        Me.endOfDayBtn.Text = "End of Day"
-        Me.endOfDayBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.endOfDayBtn.UseVisualStyleBackColor = True
-        '
-        'quitBtn
-        '
-        Me.quitBtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.quitBtn.Image = Global.ChScan.My.Resources.Resources.quit
-        Me.quitBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.quitBtn.Location = New System.Drawing.Point(744, 3)
-        Me.quitBtn.Name = "quitBtn"
-        Me.quitBtn.Size = New System.Drawing.Size(63, 42)
-        Me.quitBtn.TabIndex = 1
-        Me.quitBtn.Text = "Exit"
-        Me.quitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.quitBtn.UseVisualStyleBackColor = True
-        '
-        'scanBtn
-        '
-        Me.scanBtn.Image = CType(resources.GetObject("scanBtn.Image"), System.Drawing.Image)
-        Me.scanBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.scanBtn.Location = New System.Drawing.Point(3, 3)
-        Me.scanBtn.Name = "scanBtn"
-        Me.scanBtn.Size = New System.Drawing.Size(76, 42)
-        Me.scanBtn.TabIndex = 0
-        Me.scanBtn.Text = "Scan"
-        Me.scanBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.scanBtn.UseVisualStyleBackColor = True
-        '
-        'Main
+        'FrmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.ChScan.My.Resources.Resources.wallpaper
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(885, 483)
-        Me.Controls.Add(Me.ButtonPnl)
+        Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.MenuStrip)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
-        Me.Name = "Main"
+        Me.Name = "FrmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ch Scan"
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
         Me.StatusStrip.ResumeLayout(False)
         Me.StatusStrip.PerformLayout()
-        Me.ButtonPnl.ResumeLayout(False)
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -488,9 +438,6 @@ Partial Class Main
     Friend WithEvents ΕλληνικάToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ΑγγλικάToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SettingsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ButtonPnl As System.Windows.Forms.Panel
-    Friend WithEvents scanBtn As System.Windows.Forms.Button
-    Friend WithEvents quitBtn As System.Windows.Forms.Button
     Friend WithEvents HubToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SendToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReturnsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -513,13 +460,13 @@ Partial Class Main
     Friend WithEvents StatisticsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TodaysScansToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReportsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents endOfDayBtn As System.Windows.Forms.Button
-    Friend WithEvents searchBtn As System.Windows.Forms.Button
-    Friend WithEvents helpBtn As System.Windows.Forms.Button
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents UserActionsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LogOffToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChangePasswordToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
+    Friend WithEvents TSBtnScan As System.Windows.Forms.ToolStripButton
+    Friend WithEvents TSBtnExit As System.Windows.Forms.ToolStripButton
 
 End Class
