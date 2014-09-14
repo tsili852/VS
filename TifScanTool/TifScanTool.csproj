@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C8205F2-D06D-443E-A171-40B61C6D32EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MainDemo</RootNamespace>
+    <AssemblyName>TifScanTool</AssemblyName>
+    <ApplicationIcon>Resources\scanner.ico</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>AB5804D96DD8793EECBA6B4D803F438BD9C67DB7</ManifestCertificateThumbprint>
+    <ManifestKeyFile>TifScanTool_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>C:\Documents and Settings\daskalakia.CTNT\Desktop\Install\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ProductName>UniScan</ProductName>
+    <PublisherName>Unisystems</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.1.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_DOTNET_2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;FOR_DOTNET_2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_DOTNET_2</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\TifScanTool.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;FOR_DOTNET_2</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\TifScanTool.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Leadtools, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Fax, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.Codecs.Fax.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Pdf, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.Codecs.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs.Tif, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.Codecs.Tif.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Color, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.ImageProcessing.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Core, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.ImageProcessing.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Effects, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.ImageProcessing.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.SpecialEffects, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.ImageProcessing.SpecialEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.ImageProcessing.Utilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.ImageProcessing.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Twain, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.Twain.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.Color, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.WinForms.CommonDialogs.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.WinForms.CommonDialogs.File, Version=15.0.0.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Leadtools.WinForms.CommonDialogs.File.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Demos.cs" />
+    <Compile Include="Common\DialogUtilities.cs" />
+    <Compile Include="Common\ImageFileLoader.cs" />
+    <Compile Include="Common\ImageFileLoaderPagesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ImageFileLoaderPagesDialog.Designer.cs">
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ImageFileSaver.cs" />
+    <Compile Include="Common\Messager.cs" />
+    <Compile Include="Common\PaintPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\PaintPropertiesDialog.Designer.cs">
+      <DependentUpon>PaintPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PdfEngineDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\PdfEngineDialog.Designer.cs">
+      <DependentUpon>PdfEngineDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UnlockSupport.cs" />
+    <Compile Include="Common\WaitCursor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Common\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ImageFileLoaderPagesDialog.resx">
+      <DependentUpon>ImageFileLoaderPagesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PaintPropertiesDialog.resx">
+      <DependentUpon>PaintPropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PdfEngineDialog.resx">
+      <DependentUpon>PdfEngineDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AddNoiseDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddNoiseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\AntiAliasDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AntiAliasDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\BinaryDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BinaryDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\BorderRemoveDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BorderRemoveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ColorResolutionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorResolutionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\CommandProgressDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CommandProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ContourDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContourDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\CropDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CropDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\DeskewDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeskewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\DotRemoveDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DotRemoveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\EdgeDetectorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EdgeDetectorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\EmbossDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmbossDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\FlipDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FlipDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GrayScaleDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GrayScaleDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\GrayScaleFactorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GrayScaleFactorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\HalftoneDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HalftoneDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\HistogramEqualizeDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HistogramEqualizeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\HolePunchRemoveDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HolePunchRemoveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\IntensityDetectDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IntensityDetectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\InvertedTextDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InvertedTextDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\LineRemoveDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LineRemoveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\MotionBlurDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MotionBlurDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ResizeDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResizeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\RotateDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RotateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ShearDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShearDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\SmoothDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SmoothDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\SpatialDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpatialDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\SwapColorsDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SwapColorsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\UnsharpMaskDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnsharpMaskDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Command\ValueDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ValueDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ImageInformationDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageInformationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PaletteDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PaletteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PanViewerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PanViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RawDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RawDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UnderlayDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnderlayDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ZoomDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZoomDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\Command\AddNoiseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AddNoiseDialog.Designer.cs">
+      <DependentUpon>AddNoiseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\AntiAliasDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\AntiAliasDialog.Designer.cs">
+      <DependentUpon>AntiAliasDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\BinaryDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\BinaryDialog.Designer.cs">
+      <DependentUpon>BinaryDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\BorderRemoveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\BorderRemoveDialog.Designer.cs">
+      <DependentUpon>BorderRemoveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ColorResolutionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ColorResolutionDialog.Designer.cs">
+      <DependentUpon>ColorResolutionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\CommandProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\CommandProgressDialog.Designer.cs">
+      <DependentUpon>CommandProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ContourDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ContourDialog.Designer.cs">
+      <DependentUpon>ContourDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\CropDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\CropDialog.Designer.cs">
+      <DependentUpon>CropDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\DeskewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\DeskewDialog.Designer.cs">
+      <DependentUpon>DeskewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\DotRemoveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\DotRemoveDialog.Designer.cs">
+      <DependentUpon>DotRemoveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\EdgeDetectorDialog.Designer.cs">
+      <DependentUpon>EdgeDetectorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\EmbossDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\EmbossDialog.Designer.cs">
+      <DependentUpon>EmbossDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\FlipDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\FlipDialog.Designer.cs">
+      <DependentUpon>FlipDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleDialog.Designer.cs">
+      <DependentUpon>GrayScaleDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleFactorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\GrayScaleFactorDialog.Designer.cs">
+      <DependentUpon>GrayScaleFactorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\HalftoneDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\HalftoneDialog.Designer.cs">
+      <DependentUpon>HalftoneDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\HistogramEqualizeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\HistogramEqualizeDialog.Designer.cs">
+      <DependentUpon>HistogramEqualizeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\HolePunchRemoveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\HolePunchRemoveDialog.Designer.cs">
+      <DependentUpon>HolePunchRemoveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\IntensityDetectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\IntensityDetectDialog.Designer.cs">
+      <DependentUpon>IntensityDetectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\InvertedTextDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\InvertedTextDialog.Designer.cs">
+      <DependentUpon>InvertedTextDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\LineRemoveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\LineRemoveDialog.Designer.cs">
+      <DependentUpon>LineRemoveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\MotionBlurDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\MotionBlurDialog.Designer.cs">
+      <DependentUpon>MotionBlurDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ResizeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ResizeDialog.Designer.cs">
+      <DependentUpon>ResizeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\RotateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\RotateDialog.Designer.cs">
+      <DependentUpon>RotateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ShearDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ShearDialog.Designer.cs">
+      <DependentUpon>ShearDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\SmoothDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\SmoothDialog.Designer.cs">
+      <DependentUpon>SmoothDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\SpatialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\SpatialDialog.Designer.cs">
+      <DependentUpon>SpatialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\SwapColorsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\SwapColorsDialog.Designer.cs">
+      <DependentUpon>SwapColorsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\UnsharpMaskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\UnsharpMaskDialog.Designer.cs">
+      <DependentUpon>UnsharpMaskDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Command\ValueDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Command\ValueDialog.Designer.cs">
+      <DependentUpon>ValueDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ImageInformationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImageInformationDialog.Designer.cs">
+      <DependentUpon>ImageInformationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PaletteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PaletteDialog.Designer.cs">
+      <DependentUpon>PaletteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PanViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PanViewerForm.Designer.cs">
+      <DependentUpon>PanViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RawDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RawDialog.Designer.cs">
+      <DependentUpon>RawDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UnderlayDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UnderlayDialog.Designer.cs">
+      <DependentUpon>UnderlayDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerForm.Designer.cs">
+      <DependentUpon>ViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ZoomDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ZoomDialog.Designer.cs">
+      <DependentUpon>ZoomDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Constants.cs" />
+    <Compile Include="Utilities\ImageInformation.cs" />
+    <Compile Include="Utilities\RawData.cs" />
+    <Compile Include="Utilities\Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chm\UniScan.chm" />
+    <None Include="Resources\deskew30.png" />
+    <Content Include="Chm\BasicFunctions.htm" />
+    <Content Include="Chm\Copyright.htm" />
+    <Content Include="Chm\deskew30.png" />
+    <Content Include="Chm\deskewafter.PNG" />
+    <Content Include="Chm\deskewbefore.PNG" />
+    <Content Include="Chm\deskewfill.PNG" />
+    <Content Include="Chm\DiscardAll.htm" />
+    <Content Include="Chm\fileinfo.PNG" />
+    <Content Include="Chm\fileinformation.PNG" />
+    <Content Include="Chm\ImportFromFile.htm" />
+    <Content Include="Chm\Intro.htm" />
+    <Content Include="Chm\next-64x64.png" />
+    <Content Include="Chm\opendialog.PNG" />
+    <Content Include="Chm\Openfile.png" />
+    <Content Include="Chm\PageFunctions.htm" />
+    <Content Include="Chm\page_delete.png" />
+    <Content Include="Chm\page_process.png" />
+    <Content Include="Chm\previous-64x64.png" />
+    <Content Include="Chm\repeat30.png" />
+    <Content Include="Chm\rotated.PNG" />
+    <Content Include="Chm\Scanner Folder1.png" />
+    <Content Include="Chm\Scanning.htm" />
+    <Content Include="Chm\search_add.png" />
+    <Content Include="Chm\search_remove.png" />
+    <Content Include="Chm\skip-backward-64x64.png" />
+    <Content Include="Chm\skip-forward-64x64.png" />
+    <Content Include="Chm\skip_backward.png" />
+    <Content Include="Chm\Technical.htm" />
+    <Content Include="Chm\twain.PNG" />
+    <Content Include="Chm\Version.htm" />
+    <Content Include="lib\Leadtools.Codecs.dll" />
+    <Content Include="lib\Leadtools.Codecs.Fax.dll" />
+    <Content Include="lib\Leadtools.Codecs.Pdf.dll" />
+    <Content Include="lib\Leadtools.Codecs.Tif.dll" />
+    <Content Include="lib\Leadtools.dll" />
+    <Content Include="lib\Leadtools.ImageProcessing.Color.dll" />
+    <Content Include="lib\Leadtools.ImageProcessing.Core.dll" />
+    <Content Include="lib\Leadtools.ImageProcessing.Effects.dll" />
+    <Content Include="lib\Leadtools.ImageProcessing.SpecialEffects.dll" />
+    <Content Include="lib\Leadtools.ImageProcessing.Utilities.dll" />
+    <Content Include="lib\Leadtools.Twain.dll" />
+    <Content Include="lib\Leadtools.WinForms.CommonDialogs.Color.dll" />
+    <Content Include="lib\Leadtools.WinForms.CommonDialogs.File.dll" />
+    <Content Include="lib\Leadtools.WinForms.dll" />
+    <Content Include="Resources\diskette.png" />
+    <None Include="Resources\help.png" />
+    <Content Include="Resources\Leadtools.jpg" />
+    <Content Include="Resources\next-64x64.png" />
+    <Content Include="Resources\Openfile.png" />
+    <Content Include="Resources\page-remove-64x64.png" />
+    <None Include="Resources\page_process.png" />
+    <None Include="Resources\pageRotated12d.png" />
+    <None Include="Resources\page_delete.png" />
+    <Content Include="Resources\previous-64x64.png" />
+    <None Include="Resources\repeat64.png" />
+    <None Include="Resources\repeat30.png" />
+    <Content Include="Resources\Scanner Folder1.png" />
+    <Content Include="Resources\scanner.ico" />
+    <None Include="Resources\search_add.png" />
+    <None Include="Resources\search_remove.png" />
+    <Content Include="Resources\skip-backward-64x64.png" />
+    <Content Include="Resources\skip-forward-64x64.png" />
+    <Content Include="Resources\uni.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="TifScanTool.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

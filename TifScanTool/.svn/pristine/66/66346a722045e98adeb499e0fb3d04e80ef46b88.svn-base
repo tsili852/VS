@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Εισαγωγή από αρχείο</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-7">
+
+</head>
+
+<BODY>
+<P><FONT color=#000080><IMG height=48 alt="" src="Openfile.png" width=52>&nbsp;Με το πάτημα του πλήκτρου ανοίγει το παράθυρο 
+"" για επιλογή αρχείου Pdf&nbsp; ή TIFF του οποίου οι σελίδες θα ενσωματωθούν 
+στο αρχικό έγγραφο. </FONT></P>
+<P><FONT color=#000080><IMG alt="" src="opendialog.PNG"></FONT></P>
+<P><FONT color=#000080></FONT>&nbsp;</P>
+<P><FONT color=#000080>&nbsp;Με το εικονίδιο <IMG alt="" src="fileinfo.PNG">&nbsp;φαίνονται τα χαρακτηριστικά του 
+εγγράφου.</FONT></P>
+<P><FONT color=#000080><IMG alt="" src="fileinformation.PNG"></FONT></P>
+<P><FONT color=#000080></FONT>&nbsp;</P>
+<P><FONT color=#000080>Πατώντας "Open" ανοίγει το έγγραφο. 
+</FONT></P></BODY>
+</html>

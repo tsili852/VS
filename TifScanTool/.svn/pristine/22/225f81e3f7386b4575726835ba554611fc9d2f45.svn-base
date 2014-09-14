@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Διαχείριση Σελίδων</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-7">
+
+</head>
+
+<BODY><FONT face=Arial size=2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080 
+size=4>Πλοήγηση στις&nbsp;σελίδες</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080>Με την χρήση 
+των πλήκτρων</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><IMG style="WIDTH: 32px; HEIGHT: 32px" height=36 alt="" src="skip-backward-64x64.png" width=49>&nbsp;Μετακίνηση στη πρώτη 
+σελίδα</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><IMG style="WIDTH: 33px; HEIGHT: 31px" height=41 alt="" src="previous-64x64.png" width=37>&nbsp;Μετακίνηση στην προηγούμενη 
+σελίδα</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><IMG style="WIDTH: 32px; HEIGHT: 31px" height=33 alt="" src="next-64x64.png" width=34>&nbsp;Μετακίνηση στην επόμενη σελίδα</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><IMG style="WIDTH: 32px; HEIGHT: 31px" height=34 alt="" src="skip-forward-64x64.png" width=35>&nbsp;Μετακίνηση στην τελευταία 
+σελίδα</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P><FONT color=#000080>
+<HR>
+
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080 
+size=4>Μεγέθυνση/Σμύκρινση σελίδας</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080>Με την χρήση 
+των πλήκτρων</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><IMG style="WIDTH: 34px; HEIGHT: 34px" height=36 alt="" src="search_add.png" width=46>&nbsp; Μέγεθυνση σελίδας</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><IMG height=32 alt="" src="search_remove.png" width=33>&nbsp; Σμύκρινση σελίδας</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P><FONT color=#000080>
+<HR>
+
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080 size=4>Ίσιωμα 
+σελίδας(deskew). </FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080 
+size=4></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080>Στην 
+περίπτωση στραβής σάρωσης σελίδας δίνεται η δυνατότητα ισιώματος.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080>.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><IMG alt="" src="deskewbefore.PNG"></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080>Εικόνα1 Η 
+σελίδα πριν το ίσιωμα.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080>Πατάτε&nbsp;το κάτω βέλος δίπλα στην "Eπεξεργασία σελίδας" <IMG style="WIDTH: 30px; HEIGHT: 29px" height=31 alt="" src="page_process.png" width=40>&nbsp;και επιλέγετε το εικονίδιο <IMG alt="" src="deskew30.png">&nbsp;"Deskew"</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080>Στο παράθυρο 
+"Deskew" επιλέγετε το χρώμα της κενής περιοχής που θα παραμείνει μετά το ίσιωμα 
+ή και την επιλογή "Do not fill exposed area" και "ΟΚ". </FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><IMG alt="" src="deskewfill.PNG"></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Εικόνα 2 Χρώμα κενής 
+περιοχής.</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P><FONT color=#000080>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080>Η τρέχουσα 
+σελίδα ισιώνεται όπως φαίνεται στην εικόνα 3.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><IMG alt="" src="deskewafter.PNG"></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Εικόνα 3. Ισιωμένη σελίδα</P>
+<HR>
+</FONT>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080 
+size=4></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080 size=4>Πλήρης 
+περιστροφή σελίδας(180<SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EL; mso-fareast-language: EL; mso-bidi-language: AR-SA">°</SPAN>)</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080>Πατάτε&nbsp;το κάτω βέλος δίπλα στην "Eπεξεργασία σελίδας" <IMG style="WIDTH: 30px; HEIGHT: 29px" height=31 alt="" src="page_process.png" width=40>&nbsp;και επιλέγετε το 
+εικονίδιο&nbsp;&nbsp;"Πλήρης Περιστροφή" <IMG alt="" src="repeat30.png">. Η 
+σελίδα περιστρέφεται κατά 180<SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EL; mso-fareast-language: EL; mso-bidi-language: AR-SA">°.</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EL; mso-fareast-language: EL; mso-bidi-language: AR-SA"></SPAN></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EL; mso-fareast-language: EL; mso-bidi-language: AR-SA"><IMG 
+alt="" src="rotated.PNG"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT color=#000080><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EL; mso-fareast-language: EL; mso-bidi-language: AR-SA"></SPAN></FONT>&nbsp;</P><FONT 
+color=#000080><SPAN 
+style="FONT-SIZE: 12pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: EL; mso-fareast-language: EL; mso-bidi-language: AR-SA">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">Εικόνα 
+4.&nbsp;Αναποδογυρισμένη&nbsp;σελίδα</P></SPAN></FONT>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080>&nbsp;</FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT 
+color=#000080></FONT>&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P></FONT></BODY>
+</html>
